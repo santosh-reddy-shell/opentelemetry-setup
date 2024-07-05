@@ -2,18 +2,20 @@
 
 This package provides a convenient way to set up OpenTelemetry for logging, tracing, and metrics in Python applications.
 
-## Installation
-
+# Installation
 There are two ways of installing this package, using the shell pypi or installing via git.
 
-Using git
+
+## Using git
 Installing from main branch:
+```shell
+python -m pip install git+https://github.com/santosh-reddy-shell/opentelemetry-setup
+```
 
-python -m pip install git+https://github.com/sede-x/see-pda-core
-Installing package from a specific release, in the example above using release v0.7.0
-
-python -m pip install git+https://github.com/sede-x/see-pda-core@v0.7.0
-
+Installing package from a specific release, in the example above using release ``v0.7.0``
+```shell
+python -m pip install git+https://github.com/santosh-reddy-shell/opentelemetry-setup@v1.0.0
+```
 
 ## Usage
 
