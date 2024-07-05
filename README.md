@@ -34,4 +34,16 @@ tracer = observability.get_tracer(endpoint_url, "my_tracer")
 meter = observability.get_meter(endpoint_url, "my_meter")
 
 # Example usage
-logger.info("This is an info message")
+
+# Create and increment a counter metric
+counter = meter.create_counter(
+    name="example.counter",
+        description="An example counter",
+        unit="1"
+    )
+
+logger.info("Telemetry setup complete.")
+observability.init_tracing("example_span")
+# Increment the counter with current timestamp as attribute
+counter.add(45, {"attribute_key": "attribute_value", "timestamp": datetime.datetime.now().isoformat(), "source": "VSCODE"})
+observability.end_tracing()
