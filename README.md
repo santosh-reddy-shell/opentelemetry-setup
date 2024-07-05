@@ -4,9 +4,15 @@ This package provides a convenient way to set up OpenTelemetry for logging, trac
 
 ## Installation
 
-You can install this package via pip:
+There are two ways of installing this package, using the shell pypi or installing via git.
 
-pip install opentelemetry-setup
+Using git
+Installing from main branch:
+
+python -m pip install git+https://github.com/sede-x/see-pda-core
+Installing package from a specific release, in the example above using release v0.7.0
+
+python -m pip install git+https://github.com/sede-x/see-pda-core@v0.7.0
 
 
 ## Usage
